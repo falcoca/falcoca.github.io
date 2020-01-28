@@ -1,71 +1,63 @@
 /* Typography */
 body {
-    /* Everything is Raleway */
     font-family:'Open Sans', sans-serif;
   }
-  /* Except we're using more specific rules to override the headlines
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', serif; */
-  /* } */
-  /* And the "logo" */
-  .navbar-brand {
+
+h6 {
+    font-family: 'Pacifico', cursive;
+  }
+
+h5 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Navbar */
+.navbar-brand {
     font-family: 'Inconsolata', cursive;
     font-size: 30px;
   }
-  .navbar-brand img {
+  
+.navbar-brand img {
     width: 30px;
     height: 30px;
   }
+
   .navbar-light .navbar-brand {
-    color: lightpink;
+    color: lightskyblue;
   }
   
-  /* Navbar background color */
   .navbar {
     background-color: white;
   }
   
-  /* Jumbotron background and font styles */
-  /* Notice that I'm using all of the background CSS rules on the CSS cheat sheet */
-  .jumbotron.jumbotron-fluid {
-    /* Background */
-    background-attachment: fixed;
-    /* background-image: url(1a_lobster.JPG); */
-    background-repeat: no-repeat;
+  /* Jumbotron */
+    .jumbotron.jumbotron-fluid {
+    background-repeat: no-repeat; 
     background-size: cover;
-    background-color: lightpink;
-  
-    /* Fonts */
-    /* The text-shadow helps the white text stand out better on a darker background */
+    background-color: lightskyblue;
+    font-family: 'Pacifico', cursive;
     color: black;
-    /* text-shadow: 1px 1px 1px black; */
   }
   
-  /* The background color of the "testimonials" part
-  .testimonials {
-    background-color: #eeeeee; */
-  /* } */
-  
-  /* The size of the testimonials images */
-  .media img {
-    width: 64px;
-    height: 64px;
+  /* cards */
+  .btn.btn-primary {
+    background-color: lightskyblue;
+    border-color: lightskyblue;
   }
   
-  /* The pricing */
-  .pricing {
-    background-color: #181818;
-  }
-  .pricing h1 {
-    font-family: 'Permanent Marker', cursive;
-    color: #cccccc;
-  }
-  
-  /* The footer */
-  .footer img {
-    width: 100px;
-  }
-
+  /* footer */
   .padding {
       padding-left: 10px;
   }
+
+  .img-circle {
+    border-radius: 50%;
+}
+
+ .page-footer {
+   background-color: lightgray;
+ }
+
+ .page-footer h5 {
+   font-family: 'Pacifico', cursive;
+ }

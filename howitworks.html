@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags --> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <!-- Google Fonts -->
+    <!-- Swap out "Roboto" for the font(s) you want to use -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Your own CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <!-- <img src="..." class="d-inline-block align-middle">  -->
+        <i class="fas fa-ring"></i> wedways
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="whatwedo.html">What we do</a>
+          <a class="nav-item nav-link active" href="howitworks.html">How it works</a>
+          <a class="nav-item nav-link" href="seeexamples.html">See examples</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">It's actually pretty simple...</h1>
+      <p class="lead">Choose what you want, upload your photos and text, and give us an email address.</p>
+    </div>
+  </div>
+
+      <!-- form -->
+      <div class="container">
+        <form
+          action="https://formspree.io/xrgpdjbl"
+          method="POST"
+          enctype="multipart/form-data">
+
+          <div class="form-group">
+          
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Insert name here">
+            
+            <p></p>
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            
+            <p></p>
+            <label for="inputAddress">Address</label>
+            <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            
+            <p></p>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" name="city" class="form-control" id="inputCity">
+              </div>
+          
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>MA</option>
+                  <option>IL</option>
+                </select>
+              </div>
+          
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" name="zip" class="form-control" id="inputZip">
+              </div>
+            </div>
+          
+            <label for="exampleFormControlSelect1">Select style</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Choose one...</option>
+              <option>Thank you notes</option>
+              <option>Holiday cards</option>
+              <option>New Year cards</option>
+            </select>
+          
+            <p></p>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Upload photos</label>
+              <input type="file" name="upload" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+          
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Provide text</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    
+    
+      <!-- modify this form HTML and place wherever you want your form -->
+
+ 
+
+  <!-- break -->  
+  <br>
+  <br>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2>Pricing details<h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Style</th>
+          <th scope="col">Notes per pack</th>
+          <th scope="col">Price per pack</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Thank you notes</th>
+          <td>12</td>
+          <td>$24</td>
+        </tr>
+        <tr>
+          <th scope="row">Holiday cards</th>
+          <td>15</td>
+          <td>$30</td>
+        </tr>
+        <tr>
+          <th scope="row">New Years cards</th>
+          <td>16</td>
+          <td>$32</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  <!-- Footer -->
+
+  <br>
+  <br>
+  <br>
+
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <img src="thankyou2.png" class="img-circle mx-auto d-block" style="width: 150px;height: 100px">
+      </div>
+
+      <div class="col-sm-4" style="text-align:center">
+        <h5 class="text-uppercase">wedways</h5>
+        <p>Remember your weekend with more than just frames.</p>
+      </div>
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <div class="col-sm-4" style="text-align: center;">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="whatwedo.html">What we do</a>
+          </li>
+          <li>
+            <a href="howitworks.html">How it works</a>
+          </li>
+          <li>
+            <a href="seeexamples.html">See examples</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright text-center py-3">A Christian Falco production
+  </div>
+
+</footer>
+  
+  
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    
+
+
+</body>
